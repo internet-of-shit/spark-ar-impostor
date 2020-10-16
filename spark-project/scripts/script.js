@@ -35,14 +35,34 @@ const Instruction = require('Instruction');
   const [body] = await Promise.all([
     Scene.root.findFirst('body')
   ]);
+  const [leg1] = await Promise.all([
+    Scene.root.findFirst('leg')
+  ]);
+  const [leg2] = await Promise.all([
+    Scene.root.findFirst('legggg')
+  ]);
+
 
   const bodyTransform = body.transform;
+  const leg1Transform = leg1.transform;
+  const leg2Transform = leg2.transform;
+
   const faceTransform = face.cameraTransform;
 
-  const factor = 80;
+  let factor = 70;
 
   bodyTransform.rotationX = faceTransform.rotationX.mul(-1.0).sum(0).expSmooth(factor);
-  bodyTransform.rotationY = faceTransform.rotationZ.mul(1.0).sum(0).expSmooth(factor);
-  bodyTransform.rotationZ = faceTransform.rotationY.mul(-1.0).sum(0).expSmooth(factor);
+  bodyTransform.rotationY = faceTransform.rotationY.mul(1.0).sum(0).expSmooth(factor);
+  bodyTransform.rotationZ = faceTransform.rotationZ.mul(-1.0).sum(0).expSmooth(factor);
+
+  factor = 70;
+
+  leg1Transform.rotationX = faceTransform.rotationX.mul(-1.0).sum(0).expSmooth(factor);
+  leg1Transform.rotationY = faceTransform.rotationY.mul(1.0).sum(0).expSmooth(factor);
+  leg1Transform.rotationZ = faceTransform.rotationZ.mul(-1.0).sum(0).expSmooth(factor);
+
+  leg2Transform.rotationX = faceTransform.rotationX.mul(-1.0).sum(0).expSmooth(factor);
+  leg2Transform.rotationY = faceTransform.rotationY.mul(1.0).sum(0).expSmooth(factor);
+  leg2Transform.rotationZ = faceTransform.rotationZ.mul(-1.0).sum(0).expSmooth(factor);
 
 })();
