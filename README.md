@@ -6,9 +6,9 @@ Instagram Filter to turn you into an impostor from the game Among Us.
 
 It's actually quite complex. It features:
 * Bone based "neck"-bending
-* Random-Based "You are Crewmate/Impostor" mini game
+* Randomized "You are Crewmate/Impostor" mini game
 * Switching Material color on tap of the body
-* tricky handling of transparency and custom background
+* tricky handling of transparency, so your actual face glimmers trough the helmet. And custom background stuff
 
 ## Handy Links
 [Spark AR Docs](https://sparkar.facebook.com/ar-studio/learn/documentation/guides/)
