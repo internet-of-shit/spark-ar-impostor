@@ -1,8 +1,14 @@
-# Spark AR Project Template
-<img src="https://github.com/internet-of-shit/spark-ar-project-template/blob/master/filtericon.png" height="140">
+# Spark AR Among Us Face Filter
+<img src="https://github.com/internet-of-shit/spark-ar-impostor/blob/master/filtericon.png" height="140">
 <!-- pshh. change in the url the repository link to your own -->
 
-Comprehensive template for spark-ar projects. Include your models, images and even use npm and webpack to build your scripts. 
+Instagram Filter to turn you into an impostor from the game Among Us.
+
+It's actually quite complex. It features:
+* Bone based "neck"-bending
+* Randomized "You are Crewmate/Impostor" mini game
+* Switching Material color on tap of the body
+* tricky handling of transparency, so your actual face glimmers trough the helmet. And custom background stuff
 
 ## Handy Links
 [Spark AR Docs](https://sparkar.facebook.com/ar-studio/learn/documentation/guides/)
